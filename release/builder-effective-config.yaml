@@ -1,0 +1,22 @@
+directories:
+  output: release
+  buildResources: build
+appId: com.dbzj.exe
+productName: DBZJ浏览器
+files:
+  - filter:
+      - dist/**/*
+      - electron/**/*
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: public/favicon.ico
+mac:
+  target: dmg
+  icon: public/favicon.ico
+linux:
+  target: AppImage
+  icon: public/favicon.ico
+electronVersion: 28.3.3
