@@ -14,6 +14,7 @@
     "tauri:dev": "tauri dev",
     "tauri:build": "tauri build",
     "tauri:build:win": "tauri build --target x86_64-pc-windows-msvc",
+    "tauri:build:installer": "tauri build --target x86_64-pc-windows-msvc --bundles nsis",
     "electron:dev": "cross-env NODE_ENV=development electron .",
     "electron:build": "vite build && electron-builder",
     "electron:build:win": "vite build && electron-builder --win",
